@@ -1,0 +1,246 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.blur-effect{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	min-height: 100%;
+	background-color: #0006;
+}
+.photo-holder{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav-bar{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 125px;
+}
+
+.nav-bar span{
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  left: 10%;
+  top: 70%;
+  text-transform: uppercase;
+  font-family: 'Kodchasan', sans-serif;
+  letter-spacing: 3px;
+}
+
+.nav-bar .content-holder{
+  top: 80%;
+  left: 41%;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .content-holder .active a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+.nav-bar .content-holder .active a:hover{
+  color: yellow;
+  border-bottom: 1px solid yellow;
+  transition: .3s;
+}
+.nav-bar .content-holder .not-active a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  color: #fff;
+}
+.nav-bar .content-holder .not-active a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  transition: .3s;
+}
+.nav-bar .social-media-accounts{
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .social-media-accounts li a{
+  text-decoration: none;
+  color: #fff6;
+  margin-right: 3px;
+}
+.nav-bar .social-media-accounts li a:hover{
+  font-size: 25px;
+  color: #fff;
+  transition: .2s;
+}
+.container{
+	position: absolute;
+	top: 35%;
+	left: 55%;
+	width: 30%;
+}
+.container .username {
+	width: 100%;
+}
+.container .username .uname{
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		border: 1px solid #fff6;
+		font-family: 'Raleway', sans-serif;
+		font-weight: lighter;
+		background-color: #000;
+		color: #fff;
+}
+.container .username .uname::placeholder{
+	color: #fff6;
+}
+.container .email .mailadress{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #fff6;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	background-color: #000;
+	color: #fff;
+	margin-top: 3px;
+}
+.container .email	 .mailadress::placeholder{
+	color: #fff6;
+}
+.container .content .exp{
+	width: 99%;
+	height: 200px;
+	margin-top: 3px;
+	text-align: center;
+	background-color: #000;
+	border: 1px solid #fff6;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	color: #fff;
+}
+.container .content .exp::placeholder{
+	color: #fff6;
+}
+.container .content .exp:focus{
+	border: 1px solid green;
+}
+.container .btn{
+	width: 90px;
+	height: 30px;
+	float: right;
+	background-color: #0009;
+	border: 0px;
+	color: #fff6;
+	transition: .5s;
+}
+.container .btn:hover{
+	background-color: #000;
+	height: 40px;
+	width: 100px;
+	transition: .5s;
+	color: #fff;
+}
+.under-nav{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	width: 360px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.under-nav h1{
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+}
+@media screen and (max-width: 1000px){
+	.nav-bar{
+		position: absolute;
+		width: 100%;
+		height: 125px;
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-bar span{
+		position: absolute;
+		left: 40%;
+		top: 0;
+		font-size: 40px;
+	}
+	.nav-bar .content-holder{
+		position: absolute;
+		left: 5%;
+		top: 50%;
+		width: 50%;
+	}
+	.nav-bar .social-media-accounts{
+		position: absolute;
+		right: 50%;
+		top: 50%;
+	}
+	.under-nav{
+		width: 100%;
+		left: 0;
+		text-align: center;
+		top: 20%;
+	}
+	.container{
+		width: 50%;
+		top: 42%;
+		left: 25%;
+	}
+}
+	@media screen and (max-width:500px) {
+		.nav-bar{
+			position: absolute;
+			width: 100%;
+			height: 125px;
+			display: flex;
+			flex-direction: column;
+		}
+		.nav-bar span{
+			position: absolute;
+			left: 23%;
+			top: 0;
+			font-size: 40px;
+		}
+		.nav-bar .content-holder{
+			width: 100%;
+			left: 13%;
+			position: absolute;
+			top: 50%;
+		}
+		.nav-bar .social-media-accounts{
+			position: absolute;
+			top: 80%;
+			left: 35%;
+		}
+		.under-nav{
+			position: absolute;
+			top: 25%;
+			left: 10%;
+
+			width: 75%;
+		}
+		.under-nav h1 {
+			text-align: center;
+			font-size: 20px;
+		}
+}

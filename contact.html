@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<title>Contact</title>
+</head>
+<body>
+	<div class="blur-effect"></div>
+	<div class="nav-bar">
+		<span>TRAVEL.</span>
+
+		<ul class="content-holder">
+			<li class="not-active"><a href="index.html">Home</a></li>
+			<li class="not-active"><a href="about.html">About</a></li>
+			<li class="active"><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<ul class="social-media-accounts">
+			<li class="facebook"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+			<li class="twitter"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+			<li class="instagram"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		</ul>
+	</div>
+	<div class="photo-holder"></div>
+
+	<div class="under-nav">
+		<h1>Your thoughts are important for us!</h1>
+	</div>
+	<div class="container">
+		<div class="username">
+			<input class="uname" type="text" name="" placeholder="Username" class="uname">
+		</div>
+		<div class="email">
+			<input class="mailadress" type="text" name="" placeholder="E-mail">
+		</div>
+		<div class="content">
+			<textarea class="exp" placeholder="What do you want to talk about?"></textarea>
+		</div>
+		<button class="btn">Send</button>
+	</div>
+	<div class="image-holder"></div>
+	<script type="text/javascript">
+			TweenMax.from(".nav-bar span",0.5, {
+				delay: 0,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+			TweenMax.from(".content-holder li",0.5, {
+					delay: 0.25,
+					y:20,
+					opacity: 0,
+					ease: Expo.easeInOut
+				})
+			TweenMax.from(".social-media-accounts .facebook",0.5, {
+				delay: 0.625,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+			TweenMax.from(".social-media-accounts .twitter",0.25, {
+				delay: 0.75,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+			TweenMax.from(".social-media-accounts .instagram",0.25, {
+				delay: 0.875,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+			TweenMax.from(".under-nav", 1, {
+				delay: 1,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+			TweenMax.from(".container", 1, {
+				delay: 1.25,
+				y:20,
+				opacity: 0,
+				ease: Expo.easeInOut
+			})
+		</script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.photo-holder{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-image: url(about.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blur-effect{
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000000a6;
+}
+.nav-bar{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 125px;
+}
+
+.nav-bar span{
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  left: 10%;
+  top: 70%;
+  text-transform: uppercase;
+  font-family: 'Kodchasan', sans-serif;
+  letter-spacing: 3px;
+}
+
+.nav-bar .content-holder{
+  top: 80%;
+  left: 41%;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .content-holder .active a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+.nav-bar .content-holder .active a:hover{
+  color: yellow;
+  border-bottom: 1px solid yellow;
+  transition: .3s;
+}
+.nav-bar .content-holder .not-active a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  color: #fff;
+}
+.nav-bar .content-holder .not-active a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  transition: .3s;
+}
+.nav-bar .social-media-accounts{
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .social-media-accounts li a{
+  text-decoration: none;
+  color: #fff6;
+  margin-right: 3px;
+}
+.nav-bar .social-media-accounts li a:hover{
+  font-size: 25px;
+  color: #fff;
+  transition: .2s;
+}
+.ibrahim-bar{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 45%;
+  height: 50%;
+}
+.ibrahim-photo{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(ibrahim.jpeg);
+  background-size: cover;
+  background-position: center;
+  left: 40%;
+  border-radius: 100px;
+  top: 10%;
+  transition: .5s;
+}
+.ibrahim-photo:hover{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 30%;
+  top: 5%;
+  transition: .5s;
+}
+.name{
+  position: absolute;
+  top: 43%;
+  left: 40%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.position{
+  position: absolute;
+  top: 49%;
+  left: 37%;
+  color: #fff6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.explanation{
+  width: 90%;
+  margin-top: 35%;
+  color: #fff6;
+  font-family: 'Montserrat', sans-serif;
+  transition: .5s;
+}
+.explanation:hover{
+  color: #fff;
+  transition: .5s;
+}
+.alp-bar{
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  width: 45%;
+  height: 50%;
+}
+
+.alp-photo{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(alp.jpg);
+  background-size: cover;
+  background-position: center;
+  left: 40%;
+  border-radius: 100px;
+  top: 10%;
+  transition: .5s;
+}
+.alp-photo:hover{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 30%;
+  top: 5%;
+  transition: .5s;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-bar{
+		position: absolute;
+		width: 100%;
+		height: 125px;
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-bar span{
+		position: absolute;
+		left: 40%;
+		top: 0;
+		font-size: 40px;
+	}
+	.nav-bar .content-holder{
+		position: absolute;
+		left: 5%;
+		top: 50%;
+		width: 50%;
+	}
+	.nav-bar .social-media-accounts{
+		position: absolute;
+		right: 50%;
+		top: 50%;
+	}
+  .general-bar-holder{
+    width: 100%;
+  }
+  .general-bar-holder .ibrahim-bar{
+    width: 100%;
+  }
+  .general-bar-holder .alp-bar{
+    width: 100%;
+    margin-top: 60%;
+  }
+  .second-photo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(indexBck.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+  }
+}

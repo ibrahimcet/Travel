@@ -1,0 +1,101 @@
+<!DOCTYPE h          delay: 1.5,tml>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <title>About</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="blur-effect"></div>
+      <span>TRAVEL.</span>
+
+      <ul class="content-holder">
+        <li class="not-active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li class="not-active"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="social-media-accounts">
+        <li class="facebook"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li class="twitter"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li class="instagram"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+    </div>
+    <div class="photo-holder"></div>
+
+    <div class="general-bar-holder">
+      <div class="ibrahim-bar">
+        <div class="ibrahim-header">
+          <span class="name">Ibrahim CETIN</span>
+          <span class="position">Software Developer</span>
+          <div class="ibrahim-photo"></div>
+        </div>
+        <div class="explanation">
+          <span class="explain">Lorem ipsum dolor si ipsum ac arcu. Proin est arcu, sagittis ac quam a, rutrum vulputate ante. In condimentum dapibus metus, eu tempus mauris mattis ac. Proin eget ante eget tortor tincidunt iaculis quis quis ante. Maecenas euismod tellus ac dui condimentum laoreet. Integer in nunc varius, accumsan magna nec, egestas ligula. Quisque sed posuere nunc. Suspendisse id velit mollis, auctor enim eget, luctustempus fringilla ante. Suspendisi nean magna tortor, commodo et auctor quis, rhoncus nec leo. Nunc eleifend sem ut lm mollis. Vivamus varius facilisis tortor, in mattis risus malesuada at. Curabitur erat dui, consectetur sit amet luctus nec, sodales id mauris. Pellentesque habitant morbi </span>
+        </div>
+      </div>
+
+      <div class="alp-bar">
+        <div class="alp-header">
+          <span class="name">Alparslan Yılmaz</span>
+          <span class="position">Software Developer</span>
+          <div class="alp-photo"></div>
+        </div>
+        <div class="explanation">
+          <span class="explain">I was born in Kırsehir in Turkey. I am living at Istanbul for now. I was in studying abroad. I had a lot of chance to travel. I saw lots of places. I wanted to share my experients. Hopefully you guys will enjoy it!</span>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+        TweenMax.from(".nav-bar span",0.5, {
+          delay: 0,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".content-holder li",0.5, {
+            delay: 0.25,
+            y:20,
+            opacity: 0,
+            ease: Expo.easeInOut
+          })
+        TweenMax.from(".social-media-accounts .facebook",0.5, {
+          delay: 0.625,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".social-media-accounts .twitter",0.25, {
+          delay: 0.75,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".social-media-accounts .instagram",0.25, {
+          delay: 0.875,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".ibrahim-bar",1, {
+          delay: 0.5,
+          y:20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+        TweenMax.from(".alp-bar",1, {
+            delay: 0.5,
+            y:20,
+            opacity: 0,
+            ease: Expo.easeInOut
+          })
+    </script>
+  </body>
+</html>
